@@ -25,4 +25,22 @@ public class Test_240213 {
 
         return stack.isEmpty() ? 1:0;
     }
+
+
+    public int[] t03(int brown, int yellow){
+        int[] answer = {0, 0};
+        int sum = brown + yellow;
+
+
+        for(int i = 3 ; i <= sum/3 ; i ++){
+            answer[0] = sum/i;
+
+            if(answer[0] >= i && (i-2) * (answer[0] -2) == yellow ){
+                answer[1] = i;
+                break;
+            }
+        }        return answer;
+    }
+
+
 }

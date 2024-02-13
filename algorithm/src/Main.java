@@ -1,5 +1,8 @@
 import list.Test_240208;
 import list.Test_240213;
+
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Test_240208 t01 = new Test_240208();
@@ -10,7 +13,7 @@ public class Main {
         // t01.t10807();
         // t01.t0001();
 
-        System.out.println(t02.t01("cdcd"));
+        System.out.println(Arrays.toString(t02.t03(24, 24)));
     }
 }
 
