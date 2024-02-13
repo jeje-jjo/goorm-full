@@ -54,11 +54,14 @@ public class Test_240208 {
             }
         }
         System.out.println(sum);
+
     }
+
+
 
     public void t0001(){
         int answer = 0;
-        int num = 5;
+        int num = 3;
         Long [] res = new Long[num];
         int ret = 0;
 
@@ -66,10 +69,13 @@ public class Test_240208 {
         res[1] = 1L;
 
         for(int i = 2; i < num; ++i){
-            res[i] = res[i-1] + res[i-2];
+            res[i] = (res[i-1] + res[i-2]) % 1234567;
         }
-        ret = Math.toIntExact(res[num - 1] % 1234567);
+        ret = Math.toIntExact(res[num-1]);
 
         System.out.println(ret);
     }
+
+
+
 }
