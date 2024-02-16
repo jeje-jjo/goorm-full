@@ -1,3 +1,4 @@
+import list.Programmers_Lv2;
 import list.Test_240208;
 import list.Test_240213;
 import list.Test_240214;
@@ -9,6 +10,7 @@ public class Main {
         Test_240208 t01 = new Test_240208();
         Test_240213 t02 = new Test_240213();
         Test_240214 t03 = new Test_240214();
+        Programmers_Lv2 p = new Programmers_Lv2();
 
         // t01.t11382();
         // t01.t25314();
@@ -16,7 +18,8 @@ public class Main {
         // t01.t0001();
 
         //System.out.println(Arrays.toString(t02.t03(24, 24)));
-        System.out.println(Arrays.toString(t03.t01(5, new String[]{"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"})));
+        //System.out.println(Arrays.toString(t03.t01(5, new String[]{"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"})));
+        System.out.println(p.t02(new int[]{ 70, 50, 80}, 100));
     }
 }
 
