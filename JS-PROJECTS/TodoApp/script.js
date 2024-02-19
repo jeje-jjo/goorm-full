@@ -104,7 +104,7 @@ function createTodoElement(item){
 
 function saveToLocalStorage(){
     const data = JSON.stringify(todos);
-    
+
     localStorage.setItem('my_todos', data);
 }
 
@@ -112,9 +112,7 @@ function saveToLocalStorage(){
 function loadFromLocalStorage(){
     const data = localStorage.getItem('my_todos');
 
-    if(data){
-        todos = JSON.parse(data);
-    }
+  todos = JSON.parse(data);
 }
 
 function displayTodos(){
@@ -123,6 +121,8 @@ function displayTodos(){
     for(let i = 0; i < todos.length; i++){
         const item = todos[i];
         const {itemEl} = createTodoElement(item);
+
+
 
         list.append(itemEl);
     }

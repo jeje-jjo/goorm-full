@@ -62,4 +62,47 @@ public class Programmers_Lv2 {
         return a * b / gcd(a, b);
     }
 
+    public int t04(int n, int a, int b)
+    {
+        int answer = 0;
+
+        while ( true ){
+            if ( a == b ){
+                break;
+            }
+
+            // 1 2 -> 1
+            // 3 4 -> 2
+            // 5 6 -> 3
+            a = a/2 + a%2;
+            b= b/2 + b%2;
+            answer ++;
+        }
+
+        return answer;
+    }
+
+    public long t05(int n) {
+        long answer = 0;
+
+        long[] dp = new long[2001];
+        dp[1] = 1;
+        dp[2] = 2;
+
+        for(int i = 3; i <= n; i++){
+            dp[i] = (dp[i-1] + dp[i-2]) % 1234567;
+        }
+
+        return dp[n];
+    }
+
+    public int t06(int k, int[] tangerine) {
+        int answer = 0;
+wh
+        Arrays.sort(tangerine);
+
+
+        return answer;
+    }
+
 }
