@@ -8,4 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="cbb40db0-a948-4cdc-b2b6-f622d3b7e6f0" />
+  </component>
 </module>

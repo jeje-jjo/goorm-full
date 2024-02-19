@@ -19,8 +19,10 @@ public class Main {
 
         //System.out.println(Arrays.toString(t02.t03(24, 24)));
         //System.out.println(Arrays.toString(t03.t01(5, new String[]{"hello", "observe", "effect", "take", "either", "recognize", "encourage", "ensure", "establish", "hang", "gather", "refer", "reference", "estimate", "executive"})));
-        System.out.println(p.t02(new int[]{ 70, 50, 80}, 100));
+        // System.out.println(p.t02(new int[]{ 70, 50, 80}, 100));
+        System.out.println(p.t03(new int[]{2, 6, 8, 14}));
     }
+
 }
 
 

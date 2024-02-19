@@ -1,0 +1,5 @@
+
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(¹­ì‘þÿÿÿÿ8‰ð†€Û1
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ëà¹³úÿÿÿÿ8Šð†€Û1
+b
+java:S1858"E"words" is an array of strings, there's no need to call "toString()".(šÀ©è8þòš€Û1

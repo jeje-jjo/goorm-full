@@ -1,0 +1,21 @@
+
+T
+java:S1854"7Remove this useless assignment to local variable "t03".(½Þ¦¸8’²÷„Û1
+Y
+java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8’²÷„Û1
+Y
+java:S1854
+"7Remove this useless assignment to local variable "t01".(Ú†¤Žúÿÿÿÿ8’²÷„Û1
+J
+java:S1481
+"(Remove this unused "t01" local variable.(Ú†¤Žúÿÿÿÿ8“²÷„Û1
+J
+java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8”²÷„Û1
+E
+java:S1481"(Remove this unused "t03" local variable.(½Þ¦¸8”²÷„Û1
+F	java:S106"+Replace this use of System.out by a logger.(þ¨¯+8”²÷„Û1
+X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8”²÷„Û1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8”²÷„Û1
+]	java:S125 "<This block of commented-out lines of code should be removed.(ÒÜÅ¸úÿÿÿÿ8•²÷„Û1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8×Â‡‡Û1

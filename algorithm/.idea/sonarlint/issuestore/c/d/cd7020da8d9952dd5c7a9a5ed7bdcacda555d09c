@@ -1,0 +1,16 @@
+
+L
+java:S3740"/Provide the parametrized type for this generic.(ÁƒÐÔ8’§å‡Ú1
+L
+java:S3740"/Provide the parametrized type for this generic.(ÁƒÐÔ8’§å‡Ú1
+>
+java:S1643"Use a StringBuilder instead.(ùËáÖúÿÿÿÿ8“§å‡Ú1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«Õ¨Ç8“§å‡Ú1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‚¨Ö§8®§å‡Ú1
+U	java:S106$"9Replace this use of System.out or System.err by a logger.(‚¨Ö§8¯§å‡Ú1
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(‚¨Ö§8±§å‡Ú1
+H
+java:S1481?"+Remove this unused "answer" local variable.(åí¢é8¨Ÿæ‡Ú1
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(ÇúªÓþÿÿÿÿ8³§å‡Ú1
+W
+java:S1128"5Remove this unused import 'com.sun.jdi.IntegerValue'.(ÍªÜ¼þÿÿÿÿ8ªŸæ‡Ú1
