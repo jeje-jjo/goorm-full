@@ -104,7 +104,7 @@ function createTodoElement(item){
 
 function saveToLocalStorage(){
     const data = JSON.stringify(todos);
-
+gl
     localStorage.setItem('my_todos', data);
 }
 
