@@ -1,6 +1,10 @@
-package list;
+    package list;
 
-import java.util.Arrays;
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.HashMap;
+    import java.util.HashSet;
+    import java.util.List;
 
 public class Programmers_Lv2 {
 
@@ -98,8 +102,46 @@ public class Programmers_Lv2 {
 
     public int t06(int k, int[] tangerine) {
         int answer = 0;
-wh
-        Arrays.sort(tangerine);
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+        for(int item : tangerine){
+            map.put(item, map.getOrDefault(item, 0) + 1);
+        }
+
+        List<Integer> list = new ArrayList<>(map.keySet());
+        list.sort((o1, o2) -> map.get(o2) - map.get(o1));
+
+        int i = 0;
+        while (k > 0){
+            k -= map.get(list.get(i));
+            i++;
+        }
+
+        return answer;
+    }
+
+
+    public int t07(int[] elements) {
+        int answer = 0;
+        HashSet<Integer> set = new HashSet<>();
+        int cnt = 1;
+
+        // 우선 카운트를 순회하면서 나가기
+        while(cnt <= elements.length){
+
+            //첫번째부터 el의 길이만큼 순차로 순회하면서 더하기
+            for(int i = 0; i < elements.length; i++){
+                int sum = 0;
+                for(int j = i; j < i + cnt; j++){
+                    sum += elements[j%elements.length];
+                }
+                set.add(sum);
+                cnt++;
+
+            }
+        }
+
+        answer = set.size();
 
 
         return answer;

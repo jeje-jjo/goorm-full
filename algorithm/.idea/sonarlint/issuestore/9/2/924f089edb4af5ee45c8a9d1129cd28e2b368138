@@ -1,19 +1,19 @@
 
 T
-java:S1854"7Remove this useless assignment to local variable "t03".(½Ş¦¸8¦šÇÿÛ1
+java:S1854"7Remove this useless assignment to local variable "t03".(½Ş¦¸8åêñ©Ü1
 Y
-java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8¦šÇÿÛ1
+java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8åêñ©Ü1
 Y
 java:S1854
-"7Remove this useless assignment to local variable "t01".(Ú†¤úÿÿÿÿ8¦šÇÿÛ1
+"7Remove this useless assignment to local variable "t01".(Ú†¤úÿÿÿÿ8åêñ©Ü1
 J
 java:S1481
-"(Remove this unused "t01" local variable.(Ú†¤úÿÿÿÿ8§šÇÿÛ1
+"(Remove this unused "t01" local variable.(Ú†¤úÿÿÿÿ8æêñ©Ü1
 J
-java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8¨šÇÿÛ1
+java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8æêñ©Ü1
 E
-java:S1481"(Remove this unused "t03" local variable.(½Ş¦¸8¨šÇÿÛ1
-L	java:S106"+Replace this use of System.out by a logger.(ÚŸşïøÿÿÿÿ8©šÇÿÛ1
-X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8©šÇÿÛ1
-]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8©šÇÿÛ1
-]	java:S125!"<This block of commented-out lines of code should be removed.(ÒÜÅ¸úÿÿÿÿ8©šÇÿÛ1
+java:S1481"(Remove this unused "t03" local variable.(½Ş¦¸8æêñ©Ü1
+G	java:S106"+Replace this use of System.out by a logger.( Öîê8çêñ©Ü1
+X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8çêñ©Ü1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8çêñ©Ü1
+]	java:S125#"<This block of commented-out lines of code should be removed.(ÒÜÅ¸úÿÿÿÿ8èêñ©Ü1
