@@ -1,3 +1,4 @@
+import list.GroupStudy;
 import list.Programmers_Lv2;
 import list.Test_240208;
 import list.Test_240213;
@@ -11,6 +12,7 @@ public class Main {
         Test_240213 t02 = new Test_240213();
         Test_240214 t03 = new Test_240214();
         Programmers_Lv2 p = new Programmers_Lv2();
+        GroupStudy g = new GroupStudy();
 
         // t01.t11382();
         // t01.t25314();
@@ -22,8 +24,11 @@ public class Main {
         // System.out.println(p.t02(new int[]{ 70, 50, 80}, 100));
         //System.out.println(p.t03(new int[]{2, 6, 8, 14}));
         //System.out.println(p.t04(8,4,7));
-        System.out.println(p.t07(new int[]{7, 9, 1, 1,4}));
+        //System.out.println(p.t07(new int[]{7, 9, 1, 1,4}));
 
+        //g.q1181();
+        //g.q1931();
+        g.q1918();
     }
 
 }
@@ -40,3 +45,5 @@ public class Main {
 	}
 }
  */
+
+
