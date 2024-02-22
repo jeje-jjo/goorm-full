@@ -78,29 +78,46 @@ public class GroupStudy {
 
     public void q1918(){
         Scanner sc = new Scanner(System.in);
-        Stack<String> st = new Stack<>();
+        Deque<String> deq = new ArrayDeque<>();
         String me = sc.nextLine();
-        String ch = "";
-        String[] arr = new String[me.length()];
+        StringBuilder sb = new StringBuilder();
+
         for(int i = 0; i < me.length(); i++){
-            ch = String.valueOf(me.charAt(i));
-            System.out.println(ch + " >> " + (int)me.charAt(i));
-            // '(' 괄호가 있을 경우 선처리
-            if((int)me.charAt(i) == 40){
-                arr[i] = String.valueOf(me.charAt(i+1));
-                arr[i+1] = String.valueOf(me.charAt(i+3));
-                arr[i+2] = String.valueOf(me.charAt(i+2));
-                i += 4;
-            }else if(d){
-                arr[i] = String.valueOf(me.charAt(i));
+            char temp = me.charAt(i);
+
+            // 문자일 경우
+            if(Character.isLetter(temp)){
+                sb.append(temp);
+
+            // ( < 이 괄호면 스택에 넣고
+            }else if(temp == '(') {
+                deq.addFirst(String.valueOf(temp));
+
+                // ) < 이 괄호면 전에 ( 괄호가 나왔던 곳까지 스택에서 출력해서 sb에 넣기
+            }else if(temp == ')'){
+                while(!deq.isEmpty() && deq.peek().charAt(0) != '('){
+                    sb.append(deq.pop());
+                }
+                deq.pop(); // '(' 제거, 괄호 내부 연산자 처리 후 '(' 제거
+
+            // 괄호를 제외한 연산자일 경우 스택에 쌓음, but 이전에 들어있는 연산자보다 우선순위가 높거나 같을 경우 빼기
+            }else{
+                while(!deq.isEmpty() && ck(deq.peek().charAt(0)) >= ck(temp)){
+                    sb.append(deq.pop());
+                }
+                deq.addFirst(String.valueOf(temp));
             }
         }
-
-        System.out.println(Arrays.toString(arr));
-
-
-    //    System.out.println();
-
+        // 마지막에 쌓인 것 처리하기
+        while(!deq.isEmpty()){
+            sb.append(deq.pop());
+        }
+           System.out.println(sb);
+    }
+    static int ck(char item){
+        if(item == '(') return 0;
+        else if(item == '+' || item == '-') return 1;
+        else return 2; // '*', '/'
     }
 }
 
