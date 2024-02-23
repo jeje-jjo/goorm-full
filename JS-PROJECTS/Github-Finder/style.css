@@ -1,6 +1,7 @@
+
 body{
     margin : 0;
-  
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 header {
@@ -10,9 +11,10 @@ header {
 }
 
 div {
-    border : 1px solid gray;
+    border : 1px solid lightgray;
     padding : 5px;
     margin : 10px;
+    border-radius : 5px;
 }
 
 header h1 {
@@ -22,4 +24,8 @@ header h1 {
 input {
     width: 100%;
     border : none;
+}
+
+.searchBox h1{
+    font-weight: bolder;
 }

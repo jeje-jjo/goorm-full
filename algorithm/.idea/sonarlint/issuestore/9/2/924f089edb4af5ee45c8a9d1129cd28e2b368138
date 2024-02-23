@@ -1,23 +1,22 @@
 
-W
-java:S1854"5Remove this useless assignment to local variable "p".(˜¨õ¦øÿÿÿÿ8©ÑÅÑÜ1
+R
+java:S1854"5Remove this useless assignment to local variable "g".(ã¼“ƒ8É‹Ç¤Ý1
 T
-java:S1854"7Remove this useless assignment to local variable "t03".(½Þ¦¸8Ð“¹ÑÜ1
+java:S1854"7Remove this useless assignment to local variable "t03".(½Þ¦¸8Ê‹Ç¤Ý1
 Y
-java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8Ñ“¹ÑÜ1
+java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8Ê‹Ç¤Ý1
 Y
-java:S1854"7Remove this useless assignment to local variable "t01".(Ú†¤Žúÿÿÿÿ8Ñ“¹ÑÜ1
+java:S1854"7Remove this useless assignment to local variable "t01".(Ú†¤Žúÿÿÿÿ8Ê‹Ç¤Ý1
 J
-java:S1481"(Remove this unused "t01" local variable.(Ú†¤Žúÿÿÿÿ8Ò“¹ÑÜ1
+java:S1481"(Remove this unused "t01" local variable.(Ú†¤Žúÿÿÿÿ8Ë‹Ç¤Ý1
 J
-java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8Ó“¹ÑÜ1
+java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8Ë‹Ç¤Ý1
 E
-java:S1481"(Remove this unused "t03" local variable.(½Þ¦¸8Ó“¹ÑÜ1
-H
-java:S1481"&Remove this unused "p" local variable.(˜¨õ¦øÿÿÿÿ8¬ÑÅÑÜ1
-X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8Ô“¹ÑÜ1
-]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8Ô“¹ÑÜ1
-]	java:S125"<This block of commented-out lines of code should be removed.(ÄÂÌ­ûÿÿÿÿ8¬…œÔÜ1
-X	java:S125("<This block of commented-out lines of code should be removed.(Î€ŒÙ8Ô“¹ÑÜ1
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÅœóÜ1
+java:S1481"(Remove this unused "t03" local variable.(½Þ¦¸8Ë‹Ç¤Ý1
+C
+java:S1481"&Remove this unused "g" local variable.(ã¼“ƒ8Ë‹Ç¤Ý1
+L	java:S106!"+Replace this use of System.out by a logger.(Ò‚ËÔùÿÿÿÿ8Ì‹Ç¤Ý1
+X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8Ì‹Ç¤Ý1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8Ì‹Ç¤Ý1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÄÂÌ­ûÿÿÿÿ8Ì‹Ç¤Ý1
+X	java:S125*"<This block of commented-out lines of code should be removed.(Î€ŒÙ8Ì‹Ç¤Ý1

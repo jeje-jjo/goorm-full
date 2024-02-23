@@ -147,4 +147,24 @@ public class Programmers_Lv2 {
         return answer;
     }
 
+    public int t08(int[] elements) {
+        int answer = 0;
+        // 중복허용 안 되도록
+        HashSet<Integer> hs = new HashSet<>();
+
+        int s = 1;
+        while(s <= elements.length){
+
+            for(int i = 0; i < elements.length; i ++){
+                int sum = 0;
+                for(int j = i ; j < i + s ; j++){
+                    sum += elements[j % elements.length];
+                }
+                hs.add(sum);
+            }
+            s++;
+        }
+
+        return hs.size();
+    }
 }
