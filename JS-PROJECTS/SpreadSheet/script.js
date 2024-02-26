@@ -29,6 +29,7 @@ function initSpreadsheet(){
         }
         spreadsheet.push(spreadsheetRow);
     }
+    drawSheet();
     console.log(spreadsheet);
 }
 
@@ -54,4 +55,6 @@ function drawSheet(){
         }
     }
 }
+
+
 

@@ -1,10 +1,6 @@
     package list;
 
-    import java.util.ArrayList;
-    import java.util.Arrays;
-    import java.util.HashMap;
-    import java.util.HashSet;
-    import java.util.List;
+    import java.util.*;
 
 public class Programmers_Lv2 {
 
@@ -166,5 +162,34 @@ public class Programmers_Lv2 {
         }
 
         return hs.size();
+    }
+
+    public int t09(String s){
+        int answer = 0;
+
+        for(int i = 0 ; i < s.length() ; i ++){
+            String next = s.substring(i, s.length()) + s.substring(0, i);
+            Deque<Character> deq = new ArrayDeque<>();
+
+
+            for(int j = 0; j <next.length(); j ++){
+                char c = next.charAt(j);
+                if(deq.isEmpty()){
+                    deq.push(c);
+                }else if(c == ')' && deq.peek() == '('){
+                    deq.pop();
+                }else if(c == ']' && deq.peek() == '['){
+                    deq.pop();
+                }else if(c == '}' && deq.peek() == '{'){
+                    deq.pop();
+                }else {
+                    deq.push(c);
+                }
+            }
+            if(deq.isEmpty()){
+                answer++;
+            }
+        }
+        return answer;
     }
 }
