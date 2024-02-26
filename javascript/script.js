@@ -122,4 +122,200 @@ function f7(list){
     console.log(takeFn(list));
 }
 
-f7([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+//f7([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+
+
+
+// while을 range로 대체
+function f8(end){
+    let i = 0;
+    while (i < end){
+
+        console.log(i);
+        ++ i;
+    }
+}
+// f8(10);
+
+function f9(end){
+    _.each(console.log, L.range(end));
+}
+// f9(10);
+
+
+
+// 효과를 each로 대체
+function f10(end){
+    _.go(
+        L.range(1, end, 2),
+        _.each(console.log)
+    );
+}
+
+// f10(10);
+
+
+
+// // 별찍기
+// function f11(){
+
+//     const join = sep => _.reduce((a,b) => `${a}${sep}${b}`);  
+//     _.go(
+//         L.range(1, 6),
+//         L.map(L.range),
+//         L.map(L.map( => '*')), 
+//         L.map(join('')),
+//         join('\n'),                // 최대 갯수
+//        console.log 
+//     );
+
+//     _.go(
+//         L.range(1, 6),
+//         L.map(s => go (
+//             L.range(5),
+//             L.map( => '*'),
+//             _.reduce((a,b) => `${a}${b}`)
+//         )),
+//         _.reduce((a,b) => `${a}\n${b}`),                // 최대 갯수
+//        console.log 
+//     );
+// }
+
+//f11();
+
+// 구구단
+
+function f12(){
+    const join = sep => _.reduce((a,b) => `${a}${sep}${b}`);  
+    _.go(
+        _.range(2, 10),
+        _.map(a => _.go(
+            _.range(1, 10),
+            _.map(b => `${a} * ${b} = ${a*b}`),
+            join('\n')
+        )),
+        join('\n\n'),
+        console.log
+    );
+}
+
+//f12();
+
+
+
+// 명령형 습관 지우기
+const users = [
+    {name: 'aa', age: 21},
+    {name: 'bb', age: 31},
+    {name: 'cc', age: 41},
+    {name: 'dd', age: 51},
+    {name: 'ee', age: 61},
+    {name: 'ff', age: 71},
+    {name: 'gg', age: 81},
+    {name: 'hh', age: 91},
+    {name: 'ii', age: 101}
+];
+
+function f13(users){
+    console.log(
+        _.reduce((total, u) => total + u.age, 0, users)
+    );
+    
+    const add = (a, b) => a + b;
+    console.log(
+        _.reduce(add, L.map(u => u.age, users)) 
+    );
+    
+    // 조금 더 복잡하게~
+    // 나이를 합산하는데 30세보다 적은 사람만 합산하기
+    console.log(
+        _.reduce((total, u) => u.age >= 30? total : total + u.age , 0, users)
+    );
+    
+    // map, filter, reduce를 사용해서 구현
+    console.log(
+        _.reduce(add,
+            _.map(u => u.age,
+                _.filter(u => u.age <= 30, users)))
+    );
+    
+    console.log(
+        _.reduce(add,
+            _.filter(n => n <= 30,
+                _.map(u => u.age, users)))
+    );
+}
+
+// f13(users);
+
+
+// query, queryToObject 
+const obj1 = {
+    a : 1,
+    b : undefined,
+    c : 'CC',
+    d : 'DD'
+};
+
+function f14(obj){
+    // a=1&c=CC&d=DD
+    
+    function query1(obj){
+        let res = '';
+        for(const k in obj){
+           const v = obj[k];
+           if(v === undefined) continue;
+           if(res != '') res += '&'; 
+           res += k + '=' + v ;
+        }
+        return res;
+    }
+
+    function query2(obj){
+        return Object
+        .entries(obj)
+        .reduce((query, [k, v], i) => {
+            if(v === undefined) return query; 
+            //return query + (i > 0 ? '&' : '') + k + '=' + v;
+            return `${query}${i > 0? '&' : ''}${k}=${v}`;
+            }, '');    
+    }
+
+    function query3(obj){
+        return (
+            _.reduce((a, b) => `${a}&${b}`,
+            _.map(
+                ([k, v]) => `${k}=${v}`,
+                _.reject(([_, v]) => v === undefined,
+                Object.entries(obj)
+                )
+            ))
+        )
+    };
+
+    const join = _.curry((sep, iter) => 
+        _.reduce((a, b) => `${a}${sep}${b}`, iter));
+
+    const query4 = _.pipe(
+        Object.entries,
+        _.reject(([_, v]) => v === undefined),
+        _.map(join('=')),
+        join('&')
+    ); 
+
+    console.log(query4(obj));
+};
+
+//  f14(obj1);
+
+
+
+// queryToObject
+const split = _.curry((sep,str) => str.split(sep));
+const queryToObject = _.pipe(
+    split('&'),
+    L.map(split('=')),
+    L.map(([k, v]) => ({[k] : v})),
+    _.reduce(Object.assign)
+);
+console.log(queryToObject('a=1&b=CC&c=DD'));
