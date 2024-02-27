@@ -227,4 +227,21 @@ public class Programmers_Lv2 {
         }
         return answer;
     }
+
+    public int[] t11(int n, long left, long right) {
+        // 결과 배열의 크기 계산
+        int[] answer = new int[(int) (right - left) + 1];
+
+        // 범위 내의 각 인덱스에 대해 값을 계산
+        for (long i = left; i <= right; i++) {
+            // 현재 인덱스에 해당하는 행렬의 행과 열 계산
+            int row = (int) (i / n);
+            int col = (int) (i % n);
+
+            // 행렬의 값 계산: 각 위치에서의 값은 최대(row + 1, col + 1)
+            answer[(int) (i - left)] = Math.max(row, col) + 1;
+        }
+
+        return answer;
+    }
 }
