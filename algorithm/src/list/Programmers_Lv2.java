@@ -192,4 +192,39 @@ public class Programmers_Lv2 {
         }
         return answer;
     }
+
+
+    public int t10(String[] want, int[] number, String[] discount) {
+        int answer = 0;
+        HashMap<String, Integer> hs = new HashMap<>();
+
+
+        // 키는 want, number는 val
+        // num은 변경될 예정
+        for(int i = 0; i < want.length; i++){
+            hs.put(want[i], number[i]);
+        }
+
+        // 이제 discount를 돌면서 값을 똑같이 hashmap에 넣기
+        // 계속해서 새로 체크할 것이기 때문에 내부에 hashmap 넣음
+        for(int i = 0; i <= discount.length - 10; i++){
+            HashMap<String, Integer> dis = new HashMap<>();
+            boolean isTrue = true;
+
+            for(int j = i ; j < i + 10; j++){
+                dis.put(discount[j], dis.getOrDefault(discount[j], 0) + 1);
+            }
+
+            // 이제 for을 돌면서 key로 매칭하여 같은 값이 존재하는지 보면 끝
+            for(String key : hs.keySet()){
+                // hs의 값이 더 크면 x
+                if(dis.getOrDefault(key, 0)  < hs.get(key)){
+                    isTrue = false;
+                    break;
+                }
+            }
+            if(isTrue) answer++;
+        }
+        return answer;
+    }
 }

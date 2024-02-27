@@ -1,10 +1,12 @@
 
 {
-java:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(Š›ÒÏşÿÿÿÿ8ñ«ŸŞ1
-h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëŸ„#8ò«ŸŞ1
+java:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(Š›ÒÏşÿÿÿÿ8ÈØÛÄŞ1
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëŸ„#8ÉØÛÄŞ1
 J
-java:S1172A"(Remove this unused method parameter "n".(ä‘Ğÿÿÿÿÿ8ø«ŸŞ1
+java:S1172A"(Remove this unused method parameter "n".(ä‘Ğÿÿÿÿÿ8ÖÙÛÄŞ1
 M
-java:S1481V"+Remove this unused "answer" local variable.(¹õ¯Íşÿÿÿÿ8ø«ŸŞ1
+java:S1481V"+Remove this unused "answer" local variable.(¹õ¯Íşÿÿÿÿ8×ÙÛÄŞ1
 I
-java:S1481“"+Remove this unused "answer" local variable.(åí¢é8ş«ŸŞ1
+java:S1481“"+Remove this unused "answer" local variable.(åí¢é8ÙÙÛÄŞ1
+W
+java:S2864Û"4Iterate over the "entrySet" instead of the "keySet".(ª…Ä‚ıÿÿÿÿ8ÛÙÛÄŞ1

@@ -4,6 +4,8 @@ import list.Test_240208;
 import list.Test_240213;
 import list.Test_240214;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Test_240208 t01 = new Test_240208();
@@ -29,7 +31,7 @@ public class Main {
         //g.q1918();
 
          //System.out.println(p.t08(new int[]{1,1,4,7,9}));
-        System.out.println(p.t09("[](){}"));
+        System.out.println(p.t10(new String[]{"banana", "apple", "rice", "pork", "pot"}, new int[]{3, 2, 2, 2, 1} ,new String[]{"chicken", "apple", "apple", "banana", "rice", "apple", "pork", "banana", "pork", "rice", "pot", "banana", "apple", "banana"}));
 
     }
 
