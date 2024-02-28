@@ -119,5 +119,33 @@ public class GroupStudy {
         else if(item == '+' || item == '-') return 1;
         else return 2; // '*', '/'
     }
+
+
+    public void q1166(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int l = sc.nextInt();
+        int w = sc.nextInt();
+        int h = sc.nextInt();
+
+        double s = 0;
+        double f = Math.max(Math.max(l, w), h);
+
+        for(int i = 0 ; i < 10000 ; ++i){
+            double m = (s + f) / 2;
+            if((long)(l/m) * (long)(w/m) * (long)(h/m) >= n){
+                s = m;
+            }else{
+                f = m;
+            }
+        }
+        System.out.println(f);
+    }
+
+    public void q1966(){
+        Scanner sc = new Scanner(System.in);
+
+        
+    }
 }
 

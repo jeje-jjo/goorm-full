@@ -244,4 +244,40 @@ public class Programmers_Lv2 {
 
         return answer;
     }
+
+    public int t12(int[] citations) {
+        int answer = 0;
+
+        Arrays.sort(citations);
+        for(int i = 0; i < citations.length; i ++){
+            int h = citations.length - i;
+
+            if(citations[i] >= h){
+                answer = h;
+                break;
+            }
+        }
+        return answer;
+    }
+
+    public int[][] t13(int[][] arr1, int[][] arr2) {
+        int[][] answer = {};
+
+        return answer;
+    }
+
+
+    public int t14(String[][] clothes) {
+        int answer = 0;
+        HashMap<String, String> hm = new HashMap<>();
+
+        for(int i = 0; i < clothes.length; i++){
+            hm.put(clothes[i][0], clothes[i][1]);
+        }
+
+
+        return answer;
+    }
+
+
 }

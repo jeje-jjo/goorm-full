@@ -1,14 +1,19 @@
 
 D
-java:S16049"(Make this anonymous inner class a lambda(¦åÃn8–´õÜ1
+java:S16049"(Make this anonymous inner class a lambda(¦åÃn8¹ĞşñŞ1
 ^
-java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8—´õÜ1
+java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8ºĞşñŞ1
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8Ì´õÜ1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8ÒÑşñŞ1
 >
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8Ï´õÜ1
-F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8Ğ´õÜ1
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8ÔÑşñŞ1
+F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8ÕÑşñŞ1
 K
-java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8Ñ´õÜ1
-L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8Ò´õÜ1
-L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8Õ´õÜ1
+java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8ÕÑşñŞ1
+L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8ÖÑşñŞ1
+L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8ØÑşñŞ1
+H	java:S106"+Replace this use of System.out by a logger.(‡¤Ÿ”8ÁÍÿñŞ1
+Y
+java:S1854’"6Remove this useless assignment to local variable "sc".(ğÛ²¸øÿÿÿÿ8ÉÿòŞ1
+J
+java:S1481’"'Remove this unused "sc" local variable.(ğÛ²¸øÿÿÿÿ8ÉÿòŞ1
