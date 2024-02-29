@@ -1,20 +1,20 @@
 
 D
-java:S16049"(Make this anonymous inner class a lambda(¦åÃn8¢õóøŞ1
+java:S16049"(Make this anonymous inner class a lambda(¦åÃn8÷Å¢ß1
 ^
-java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8¢õóøŞ1
+java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8ƒ÷Å¢ß1
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8êöóøŞ1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8ÜüÅ¢ß1
 >
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8ìöóøŞ1
-F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8íöóøŞ1
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8äüÅ¢ß1
+F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8æüÅ¢ß1
 K
-java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8íöóøŞ1
-L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8îöóøŞ1
-L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8ñöóøŞ1
-H	java:S106"+Replace this use of System.out by a logger.(‡¤Ÿ”8ñöóøŞ1
+java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8éüÅ¢ß1
+L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8íüÅ¢ß1
+L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8úüÅ¢ß1
+H	java:S106"+Replace this use of System.out by a logger.(‡¤Ÿ”8ÿüÅ¢ß1
 u
-java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¹äüııÿÿÿÿ8ñöóøŞ1
-M	java:S106Ô"+Replace this use of System.out by a logger.(ç¥ì´øÿÿÿÿ8óöóøŞ1
-p	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§‡ïğøÿÿÿÿ8óöóøŞ1
-M	java:S106ş"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8¨õøŞ1
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¹äüııÿÿÿÿ8€ıÅ¢ß1
+M	java:S106Ô"+Replace this use of System.out by a logger.(ç¥ì´øÿÿÿÿ8†ıÅ¢ß1
+p	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§‡ïğøÿÿÿÿ8†ıÅ¢ß1
+M	java:S106û"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8‹ıÅ¢ß1

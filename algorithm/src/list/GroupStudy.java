@@ -217,7 +217,6 @@ public class GroupStudy {
         Queue<int[]> q = new ArrayDeque<>();
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[] arr = new int[n];
 
 
         for(int i = 0; i <n ; i++){
@@ -225,28 +224,26 @@ public class GroupStudy {
         }
 
         int i = 0;
-        boolean whileloop = true;
-        while(whileloop){
+        while(!q.isEmpty()){
             int[] fst = q.poll();       // 첫번째 값 담기
-            boolean ck = false;         // 인쇄여부
+            boolean ck = true;         // 인쇄여부
 
             // 돌아가면서 비교
             for(int[] nums : q){
 
                 // 첫번째 값보다 클 경우
                 if(nums[0] > fst[0]){
-                    q.offer(new int[]{fst[0], fst[1]});
+                    q.offer(fst);
                     ck = false;
                     break;
-                }else{
-                    ck = true;
                 }
             }
 
             if(ck){
-                arr[i] = fst[0];
-                if(fst[1] == m) whileloop = false;
                 i++;
+                if(fst[1] == m) {
+                    break;
+                }
             }
 
         }
