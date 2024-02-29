@@ -36,7 +36,9 @@ public class Main {
         //System.out.println(Arrays.toString(p.t11(4, 7, 14)));
         //System.out.println(p.t12(new int[]{3, 0, 6, 1, 5}));
 
-        g.q1166();
+        //g.q1166();
+        //g.q1966();
+        g.q1966_1();
     }
 
 }

@@ -144,8 +144,114 @@ public class GroupStudy {
 
     public void q1966(){
         Scanner sc = new Scanner(System.in);
+        int len = sc.nextInt();
+        int point = sc.nextInt();
+        Deque<Integer> deq = new ArrayDeque<>();
+        int[] arr = new int[len];
+        boolean ck = true;
+        int code = 0;
 
-        
+        for(int i = 0; i < len; i++){
+            deq.add(sc.nextInt());
+        }
+
+        // 덱을 순회
+
+        int i = 0;
+        int j = 0;
+        while(ck){
+
+            // 덱이 비어있을 경우
+            if(deq.isEmpty()){
+                ck = false;
+            // 덱에 남아있는 것이 하나일 때
+            }else if(deq.size() == 1){
+                arr[len-1] = deq.getFirst();
+                if(code == 0) code = len-1;
+                ck = false;
+            // 덱에 2 이상이 남아있을 때
+            }else{
+                int num = deq.pollFirst();
+                boolean boo = false;
+
+                for(int d : deq){
+                    boo = false;
+                    // 덱의 첫번째부터 순회하면서 num보다 높은 값이 있는지 확인
+                    if(num < d){
+                        boo = true;
+                        break;
+                    }
+                }
+                // 덱에 아직 높은 값이 존재함
+                if(boo){
+                    deq.add(num);
+                    if(j == point){
+                        point = deq.size() - 1;
+                        j = 0;
+
+                    }else{
+                        j++;
+                    }
+                }else{
+                    arr[i] = num;
+
+                    if(j == point){
+                        code = i + 1;
+                    }
+                    i++;
+                    j++;
+                }
+
+
+            }
+
+        }
+
+
+
+        System.out.println(code);
+    }
+
+    public void q1966_1(){
+        Scanner sc = new Scanner(System.in);
+        Queue<int[]> q = new ArrayDeque<>();
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[] arr = new int[n];
+
+
+        for(int i = 0; i <n ; i++){
+            q.offer(new int[]{sc.nextInt(),i});
+        }
+
+        int i = 0;
+        boolean whileloop = true;
+        while(whileloop){
+            int[] fst = q.poll();       // 첫번째 값 담기
+            boolean ck = false;         // 인쇄여부
+
+            // 돌아가면서 비교
+            for(int[] nums : q){
+
+                // 첫번째 값보다 클 경우
+                if(nums[0] > fst[0]){
+                    q.offer(new int[]{fst[0], fst[1]});
+                    ck = false;
+                    break;
+                }else{
+                    ck = true;
+                }
+            }
+
+            if(ck){
+                arr[i] = fst[0];
+                if(fst[1] == m) whileloop = false;
+                i++;
+            }
+
+        }
+
+        System.out.println(i);
     }
 }
 

@@ -1,19 +1,20 @@
 
 D
-java:S16049"(Make this anonymous inner class a lambda(¦åÃn8¹ĞşñŞ1
+java:S16049"(Make this anonymous inner class a lambda(¦åÃn8¢õóøŞ1
 ^
-java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8ºĞşñŞ1
+java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8¢õóøŞ1
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8ÒÑşñŞ1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8êöóøŞ1
 >
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8ÔÑşñŞ1
-F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8ÕÑşñŞ1
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8ìöóøŞ1
+F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8íöóøŞ1
 K
-java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8ÕÑşñŞ1
-L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8ÖÑşñŞ1
-L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8ØÑşñŞ1
-H	java:S106"+Replace this use of System.out by a logger.(‡¤Ÿ”8ÁÍÿñŞ1
-Y
-java:S1854’"6Remove this useless assignment to local variable "sc".(ğÛ²¸øÿÿÿÿ8ÉÿòŞ1
-J
-java:S1481’"'Remove this unused "sc" local variable.(ğÛ²¸øÿÿÿÿ8ÉÿòŞ1
+java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8íöóøŞ1
+L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8îöóøŞ1
+L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8ñöóøŞ1
+H	java:S106"+Replace this use of System.out by a logger.(‡¤Ÿ”8ñöóøŞ1
+u
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¹äüııÿÿÿÿ8ñöóøŞ1
+M	java:S106Ô"+Replace this use of System.out by a logger.(ç¥ì´øÿÿÿÿ8óöóøŞ1
+p	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§‡ïğøÿÿÿÿ8óöóøŞ1
+M	java:S106ş"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8¨õøŞ1
