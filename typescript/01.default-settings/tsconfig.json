@@ -1,0 +1,17 @@
+{
+    "compilerOptions" : {
+        "rootDir" : "01.default-settings/src",
+        "outDir" : "./build/js",
+        "target" : "ES6",
+        "noEmitOnError": true,               // 에러가 존재해도 컴파일을 진행하지 않음
+        "module": "ESNext",                  // 모듈 시스템을 ESNext로 설정
+        "moduleResolution": "Node",
+        "esModuleInterop": true,             // ES 모듈과 CommonJS 모듈의 상호 운용성을 위해 true로 설정
+        "lib": ["ESNext", "DOM"],            // 빌드할 때 포함할 라이브러리를 설정
+        "strict": true,                      // 엄격한 타입 검사를 위해 true로 설정
+    },
+    // src 폴더 안에서만 탐색이 가능하도록 설정
+    "include": [
+        "01.default-settings/src/**/*.ts",
+    ]
+}
