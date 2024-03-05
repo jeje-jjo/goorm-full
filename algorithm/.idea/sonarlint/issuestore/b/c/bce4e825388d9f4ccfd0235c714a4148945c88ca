@@ -1,16 +1,27 @@
 
 {
-java:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(Š›ÒÏşÿÿÿÿ8‰¸ğÉŞ1
+java:S2293e"YReplace the type specification in this constructor call with the diamond operator ("<>").(Š›ÒÏşÿÿÿÿ8ÁìøÄà1
 
-java:S1488ˆ"^Immediately return this expression instead of assigning it to the temporary variable "answer".(ôê™¡ùÿÿÿÿ8Š¸ğÉŞ1
-h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëŸ„#8‹¸ğÉŞ1
+java:S1488ˆ"^Immediately return this expression instead of assigning it to the temporary variable "answer".(ôê™¡ùÿÿÿÿ8ÃìøÄà1
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëŸ„#8ÃìøÄà1
+Z
+java:S4973¸"<Strings and Boxed types should be compared using "equals()".(Ú‰¹Ç8ÄìøÄà1
 J
-java:S1172A"(Remove this unused method parameter "n".(ä‘Ğÿÿÿÿÿ8”¹ğÉŞ1
+java:S1172A"(Remove this unused method parameter "n".(ä‘Ğÿÿÿÿÿ8öíøÄà1
 M
-java:S1481V"+Remove this unused "answer" local variable.(¹õ¯Íşÿÿÿÿ8”¹ğÉŞ1
+java:S1481V"+Remove this unused "answer" local variable.(¹õ¯Íşÿÿÿÿ8öíøÄà1
 I
-java:S1481“"+Remove this unused "answer" local variable.(åí¢é8–¹ğÉŞ1
+java:S1481“"+Remove this unused "answer" local variable.(åí¢é8øíøÄà1
 W
-java:S2864Û"4Iterate over the "entrySet" instead of the "keySet".(ª…Ä‚ıÿÿÿÿ8™¹ğÉŞ1
+java:S2864Û"4Iterate over the "entrySet" instead of the "keySet".(ª…Ä‚ıÿÿÿÿ8üíøÄà1
 S
-java:S1172‡"5Remove these unused method parameters "arr1", "arr2".(øŸ™8š¹ğÉŞ1
+java:S1172‡"5Remove these unused method parameters "arr1", "arr2".(øŸ™8ıíøÄà1
+k	java:S100š"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÜºî8ıíøÄà1
+\
+java:S1854¡"9Remove this useless assignment to local variable "items".(úè ¬øÿÿÿÿ8ıíøÄà1
+k
+java:S1871¯"MThis branch's code block is the same as the block for the branch on line 294.(å¥‡8şíøÄà1
+L
+java:S1481º")Remove this unused "item" local variable.(ï×í˜ùÿÿÿÿ8ÿíøÄà1
+K	java:S108º")Either remove or fill this block of code.(ï×í˜ùÿÿÿÿ8ÿíøÄà1
+M	java:S106Â"+Replace this use of System.out by a logger.(íı’Øÿÿÿÿÿ8ÿíøÄà1

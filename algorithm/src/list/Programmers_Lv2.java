@@ -279,5 +279,71 @@ public class Programmers_Lv2 {
         return answer;
     }
 
+    public int t15_1(String[][] clothes) {
+        int answer = 0;
+        HashMap<String, String[]> hm = new HashMap<>();
+        HashSet<String> hs = new HashSet<>();
+        HashMap<String[], String[]> map = new HashMap<>();
+
+        for(int i = 0; i < clothes.length; i++){
+            String[] items = new String[30];            // 최대 길이 30
+            map.put(new String[]{clothes[i][0]}, new String[]{clothes[i][1]});
+            hs.add(clothes[i][0]);
+
+            // map 안에 아무것도 없을 경우
+            if(hm.isEmpty()){
+                items = new String[]{clothes[i][0]};
+                hm.put(clothes[i][1], items);
+            }else if(hm.containsKey(clothes[i][1])){
+                items = new String[hm.get(clothes[i][1]).length + 1];
+                String[] copy = (hm.get(clothes[i][1])).clone();
+                System.arraycopy( copy, 0, items, 0, copy.length);
+                items[items.length-1] = clothes[i][0];
+                hm.put(clothes[i][1], items);
+            }else{
+                items = new String[]{clothes[i][0]};
+                hm.put(clothes[i][1], items);
+            }
+        }
+        hm.forEach((key, val) -> {
+
+            hm.forEach((k, v) -> {
+                // 키가 같지 않을 때만
+                if(key != k){
+
+                    for(String item : v){
+
+
+
+                    }
+
+                }
+            });
+            System.out.println("key : " + key + " // val : " + Arrays.toString(val));
+        });
+        return answer;
+    }
+
+    public int t15(String[][] clothes){
+
+        int answer = 1;
+        HashMap<String, Integer> hm = new HashMap<>();
+
+        // 종류별 수
+        for(int i = 0; i < clothes.length; i++){
+            hm.put(clothes[i][1], hm.getOrDefault(clothes[i][1], 0) + 1);
+        }
+
+        // 총합계산
+        for(int count : hm.values()){
+            answer *= (count + 1);
+        }
+
+        return answer-1;
+    }
+
+
+    // 1 2 3 4 5 6  2
+    // 2 3 4 5 6 1
 
 }
