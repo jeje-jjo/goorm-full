@@ -40,7 +40,9 @@ public class Main {
         //g.q1966();
         // g.q1966_1();
 
-        System.out.println(p.t15(new String[][]{{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban","headgear"},{"crow_mask", "face"}, {"blue_sunglasses", "face"}, {"smoky_makeup", "face"}}));
+        //System.out.println(p.t15(new String[][]{{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban","headgear"},{"crow_mask", "face"}, {"blue_sunglasses", "face"}, {"smoky_makeup", "face"}}));
+        System.out.println(p.t16());
+
     }
 
 }

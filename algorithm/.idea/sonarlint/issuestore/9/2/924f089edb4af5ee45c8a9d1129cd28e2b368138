@@ -15,11 +15,12 @@ E
 java:S1481"(Remove this unused "t03" local variable.(½Ş¦¸8²ô¦Äà1
 C
 java:S1481"&Remove this unused "g" local variable.(ã¼“ƒ8³ô¦Äà1
-G	java:S106+"+Replace this use of System.out by a logger.(§«şÂ8³ô¦Äà1
+L	java:S106,"+Replace this use of System.out by a logger.(¤’Àıÿÿÿÿ8³ô¦Äà1
 X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8³ô¦Äà1
 ]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8³ô¦Äà1
 ]	java:S125"<This block of commented-out lines of code should be removed.(ÄÂÌ­ûÿÿÿÿ8´ô¦Äà1
 ]	java:S125!"<This block of commented-out lines of code should be removed.(‚èÍòşÿÿÿÿ8´ô¦Äà1
 ]	java:S125$"<This block of commented-out lines of code should be removed.(¿Ğõÿÿÿÿÿ8´ô¦Äà1
 X	java:S125'"<This block of commented-out lines of code should be removed.(êÉùø8´ô¦Äà1
-X	java:S1254"<This block of commented-out lines of code should be removed.(Î€ŒÙ8´ô¦Äà1
+X	java:S125+"<This block of commented-out lines of code should be removed.(ÏéÁõ8ˆÇ·èà1
+X	java:S1256"<This block of commented-out lines of code should be removed.(Î€ŒÙ8´ô¦Äà1

@@ -1,5 +1,6 @@
     package list;
 
+    import java.lang.reflect.Array;
     import java.util.*;
 
 public class Programmers_Lv2 {
@@ -343,7 +344,54 @@ public class Programmers_Lv2 {
     }
 
 
-    // 1 2 3 4 5 6  2
-    // 2 3 4 5 6 1
+    //public int[] t16(int[] progresses, int[] speeds) {
+    public int t16(){
+        int[] progresses = {95, 90, 99, 99, 80, 99};
+        int[] speeds = {1, 1, 1, 1, 1, 1};
 
+
+        List<Integer> list = new ArrayList<>();
+        Deque<int[]> deq = new ArrayDeque<>();
+
+        for(int i = 0; i < progresses.length; i++){
+            int p = progresses[i];
+            int s = speeds[i];
+            int[] items = {p, s};
+            deq.add(items);
+        }
+
+        // 덱이 빌 때까지 순회
+        while(!deq.isEmpty()){
+
+            // 제일 처음 있는 것부터 꺼내서 제일 마지막에 넣기
+            for(int[] arr : deq){
+                int[] iArr = {arr[0]+arr[1], arr[1]};
+                deq.addLast(iArr);
+                deq.pollFirst();
+            }
+
+            // 이제 제일 처음에 있는 게 100을 넘었다면 빼기 + 반복문 돌려서 횟수 카운트
+            int cnt = 0;
+            int size = deq.size();
+            for(int i = 0; i < size; i++) {
+                int[] fst = deq.getFirst();
+                if(fst[0] >= 100) {
+                    deq.pollFirst();
+                    cnt++;
+                }else{
+                    break;
+                }
+            }
+            if(cnt > 0){
+                list.add(cnt);
+            }
+        }
+
+        Integer[] ans = list.toArray(new Integer[0]);
+        int[] answer = Arrays.stream(ans).mapToInt(Integer::intValue).toArray();
+        System.out.println(list);
+
+
+        return 1;
+    }
 }
