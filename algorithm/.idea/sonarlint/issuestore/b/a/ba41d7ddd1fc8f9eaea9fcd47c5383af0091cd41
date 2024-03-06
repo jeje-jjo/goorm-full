@@ -1,20 +1,54 @@
 
+{	java:S135±"YReduce the total number of break and continue statements in this loop to use at most one.(™™Ø¤ûÿÿÿÿ8Œùã—á1
+{	java:S135¥"YReduce the total number of break and continue statements in this loop to use at most one.(™™Ø¤ûÿÿÿÿ8Œùã—á1
 D
-java:S16049"(Make this anonymous inner class a lambda(¦åÃn8÷Å¢ß1
+java:S1604>"(Make this anonymous inner class a lambda(¦åÃn8ùã—á1
 ^
-java:S4973%"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8ƒ÷Å¢ß1
+java:S4973*"<Strings and Boxed types should be compared using "equals()".(áÎš½ùÿÿÿÿ8ùã—á1
 t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8ÜüÅ¢ß1
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(™ÒÅııÿÿÿÿ8òûã—á1
 >
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ8äüÅ¢ß1
-F	java:S106&"+Replace this use of System.out by a logger.(ÇÑ×8æüÅ¢ß1
+java:S1116""Remove this empty statement.(ôŸìúÿÿÿÿ8õûã—á1
+F	java:S106+"+Replace this use of System.out by a logger.(ÇÑ×8õûã—á1
 K
-java:S14812")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8éüÅ¢ß1
-L	java:S106L"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8íüÅ¢ß1
-L	java:S106s"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8úüÅ¢ß1
-H	java:S106"+Replace this use of System.out by a logger.(‡¤Ÿ”8ÿüÅ¢ß1
+java:S14817")Remove this unused "temp" local variable.(ºØ‰Äûÿÿÿÿ8öûã—á1
+L	java:S106Q"+Replace this use of System.out by a logger.(³ğ¸ûÿÿÿÿ8÷ûã—á1
+L	java:S106x"+Replace this use of System.out by a logger.(­ËÖşÿÿÿÿ8ùûã—á1
+H	java:S106“"+Replace this use of System.out by a logger.(‡¤Ÿ”8ùûã—á1
 u
-java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¹äüııÿÿÿÿ8€ıÅ¢ß1
-M	java:S106Ô"+Replace this use of System.out by a logger.(ç¥ì´øÿÿÿÿ8†ıÅ¢ß1
-p	java:S100×"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§‡ïğøÿÿÿÿ8†ıÅ¢ß1
-M	java:S106û"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8‹ıÅ¢ß1
+java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(¹äüııÿÿÿÿ8úûã—á1
+M	java:S106Ù"+Replace this use of System.out by a logger.(ç¥ì´øÿÿÿÿ8ûûã—á1
+p	java:S100Ü"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§‡ïğøÿÿÿÿ8ûûã—á1
+M	java:S106€"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8üûã—á1
+u
+java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(§ö„øùÿÿÿÿ8üûã—á1
+U
+java:S1854‰"7Remove this useless assignment to local variable "arr".(Ÿæ©×8üûã—á1
+U
+java:S1854²"7Remove this useless assignment to local variable "lst".(ÏçÒÂ8üûã—á1
+H	java:S106†"+Replace this use of System.out by a logger.(ûÄÏ8şûã—á1
+F
+java:S1481‰"(Remove this unused "arr" local variable.(Ÿæ©×8şûã—á1
+X	java:S125Œ"<This block of commented-out lines of code should be removed.(¿Î«d8şûã—á1
+F
+java:S1481²"(Remove this unused "lst" local variable.(ÏçÒÂ8€üã—á1
+\
+java:S1155Ö">Use isEmpty() to check whether the collection is empty or not.(¶Ä®Í8üã—á1
+M	java:S106â"+Replace this use of System.out by a logger.(í Âõøÿÿÿÿ8üã—á1
+^	java:S125ã"<This block of commented-out lines of code should be removed.(á¡†•ùÿÿÿÿ8üã—á1
+j	java:S100í"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜×‰y8üã—á1
+o
+java:S3776í"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(˜×‰y8‚üã—á1
+U
+java:S1854¦"7Remove this useless assignment to local variable "lst".(ÏçÒÂ8‚üã—á1
+H	java:S106ï"+Replace this use of System.out by a logger.(ûÄÏ8‚üã—á1
+^	java:S125ò"<This block of commented-out lines of code should be removed.(‹……¨üÿÿÿÿ8ƒüã—á1
+X	java:S125ö"<This block of commented-out lines of code should be removed.(¿Î«d8ƒüã—á1
+^	java:S125û"<This block of commented-out lines of code should be removed.(ä’ùÿÿÿÿ8ƒüã—á1
+^	java:S125…"<This block of commented-out lines of code should be removed.(Ù¶Îëıÿÿÿÿ8ƒüã—á1
+F
+java:S1481¦"(Remove this unused "lst" local variable.(ÏçÒÂ8„üã—á1
+\
+java:S1155Ê">Use isEmpty() to check whether the collection is empty or not.(¶Ä®Í8…üã—á1
+M	java:S106Ö"+Replace this use of System.out by a logger.(í Âõøÿÿÿÿ8…üã—á1
+^	java:S125×"<This block of commented-out lines of code should be removed.(á¡†•ùÿÿÿÿ8…üã—á1

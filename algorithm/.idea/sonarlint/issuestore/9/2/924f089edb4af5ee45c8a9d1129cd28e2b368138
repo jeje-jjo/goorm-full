@@ -1,26 +1,27 @@
 
-R
-java:S1854"5Remove this useless assignment to local variable "g".(ã¼“ƒ8°ô¦Äà1
+W
+java:S1854"5Remove this useless assignment to local variable "p".(˜¨õ¦øÿÿÿÿ8ÑŒ×‘á1
 T
-java:S1854"7Remove this useless assignment to local variable "t03".(½Ş¦¸8°ô¦Äà1
+java:S1854"7Remove this useless assignment to local variable "t03".(½Ş¦¸8°ô¦Äà1
 Y
-java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8°ô¦Äà1
+java:S1854"7Remove this useless assignment to local variable "t02".(ñÂ£çúÿÿÿÿ8°ô¦Äà1
 Y
-java:S1854"7Remove this useless assignment to local variable "t01".(Ú†¤úÿÿÿÿ8°ô¦Äà1
+java:S1854"7Remove this useless assignment to local variable "t01".(Ú†¤úÿÿÿÿ8°ô¦Äà1
 J
-java:S1481"(Remove this unused "t01" local variable.(Ú†¤úÿÿÿÿ8²ô¦Äà1
+java:S1481"(Remove this unused "t01" local variable.(Ú†¤úÿÿÿÿ8²ô¦Äà1
 J
-java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8²ô¦Äà1
+java:S1481"(Remove this unused "t02" local variable.(ñÂ£çúÿÿÿÿ8²ô¦Äà1
 E
-java:S1481"(Remove this unused "t03" local variable.(½Ş¦¸8²ô¦Äà1
-C
-java:S1481"&Remove this unused "g" local variable.(ã¼“ƒ8³ô¦Äà1
-L	java:S106,"+Replace this use of System.out by a logger.(¤’Àıÿÿÿÿ8³ô¦Äà1
-X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8³ô¦Äà1
-]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8³ô¦Äà1
-]	java:S125"<This block of commented-out lines of code should be removed.(ÄÂÌ­ûÿÿÿÿ8´ô¦Äà1
-]	java:S125!"<This block of commented-out lines of code should be removed.(‚èÍòşÿÿÿÿ8´ô¦Äà1
-]	java:S125$"<This block of commented-out lines of code should be removed.(¿Ğõÿÿÿÿÿ8´ô¦Äà1
-X	java:S125'"<This block of commented-out lines of code should be removed.(êÉùø8´ô¦Äà1
-X	java:S125+"<This block of commented-out lines of code should be removed.(ÏéÁõ8ˆÇ·èà1
-X	java:S1256"<This block of commented-out lines of code should be removed.(Î€ŒÙ8´ô¦Äà1
+java:S1481"(Remove this unused "t03" local variable.(½Ş¦¸8²ô¦Äà1
+H
+java:S1481"&Remove this unused "p" local variable.(˜¨õ¦øÿÿÿÿ8ÔŒ×‘á1
+X	java:S125"<This block of commented-out lines of code should be removed.(¨£°Á8³ô¦Äà1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ú—øµùÿÿÿÿ8³ô¦Äà1
+]	java:S125"<This block of commented-out lines of code should be removed.(ÄÂÌ­ûÿÿÿÿ8´ô¦Äà1
+]	java:S125""<This block of commented-out lines of code should be removed.(‚èÍòşÿÿÿÿ8´ô¦Äà1
+]	java:S125%"<This block of commented-out lines of code should be removed.(¿Ğõÿÿÿÿÿ8´ô¦Äà1
+X	java:S125("<This block of commented-out lines of code should be removed.(êÉùø8´ô¦Äà1
+X	java:S125,"<This block of commented-out lines of code should be removed.(ÏéÁõ8ˆÇ·èà1
+X	java:S1259"<This block of commented-out lines of code should be removed.(Î€ŒÙ8´ô¦Äà1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8áêœ–á1

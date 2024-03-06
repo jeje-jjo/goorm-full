@@ -4,10 +4,11 @@ import list.Test_240208;
 import list.Test_240213;
 import list.Test_240214;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Test_240208 t01 = new Test_240208();
         Test_240213 t02 = new Test_240213();
         Test_240214 t03 = new Test_240214();
@@ -41,7 +42,9 @@ public class Main {
         // g.q1966_1();
 
         //System.out.println(p.t15(new String[][]{{"yellow_hat", "headgear"}, {"blue_sunglasses", "eyewear"}, {"green_turban","headgear"},{"crow_mask", "face"}, {"blue_sunglasses", "face"}, {"smoky_makeup", "face"}}));
-        System.out.println(p.t16());
+       // System.out.println(p.t16());
+
+        g.q11725();
 
     }
 
@@ -51,13 +54,13 @@ public class Main {
 
 /*
 제출용
-import java.util.*;
+    import java.util.*;
 
-public class Main {
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
-	}
-}
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Hello World!");
+        }
+    }
  */
 
 
