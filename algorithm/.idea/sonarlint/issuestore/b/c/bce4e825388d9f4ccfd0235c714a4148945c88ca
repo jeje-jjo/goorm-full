@@ -17,16 +17,12 @@ java:S2864Ü"4Iterate over the "entrySet" instead of the "keySet".(ª…Ä‚ıÿÿÿÿ8Î
 S
 java:S1172ˆ"5Remove these unused method parameters "arr1", "arr2".(øŸ™8Ï„´êà1
 k	java:S100›"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ØÜºî8Ï„´êà1
-\
-java:S1854¢"9Remove this useless assignment to local variable "items".(úè ¬øÿÿÿÿ8Ğ„´êà1
 k
 java:S1871°"MThis branch's code block is the same as the block for the branch on line 295.(å¥‡8Ğ„´êà1
 L
 java:S1481»")Remove this unused "item" local variable.(ï×í˜ùÿÿÿÿ8Ò„´êà1
 K	java:S108»")Either remove or fill this block of code.(ï×í˜ùÿÿÿÿ8Ò„´êà1
 M	java:S106Ã"+Replace this use of System.out by a logger.(íı’Øÿÿÿÿÿ8Ò„´êà1
-]
-java:S1854‡":Remove this useless assignment to local variable "answer".(©·ßûüÿÿÿÿ8Ó„´êà1
 Y	java:S125Û"<This block of commented-out lines of code should be removed.(Œ‘´8Ó„´êà1
 N
 java:S1481‡"+Remove this unused "answer" local variable.(©·ßûüÿÿÿÿ8Ô„´êà1

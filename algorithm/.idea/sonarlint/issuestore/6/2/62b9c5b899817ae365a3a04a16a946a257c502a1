@@ -1,0 +1,18 @@
+
+J
+java:S1604"(Make this anonymous inner class a lambda(¤ûºÔùÿÿÿÿ8­ÁÀá1
+G	java:S106"+Replace this use of System.out by a logger.(ûÄÏ8ÈÁÀá1
+L
+java:S11971"*Move the array designators [] to the type.(¢æ°´şÿÿÿÿ8ÊÁÀá1
+K
+java:S14811")Remove this unused "sums" local variable.(¢æ°´şÿÿÿÿ8ÊÁÀá1
+I
+java:S14812"-Remove this unused "sumIndex" local variable.(ïñª8ÊÁÀá1
+S
+java:S1128"1Remove this unused import 'java.util.ArrayDeque'.(†®ŞÖúÿÿÿÿ8ËÁÀá1
+O
+java:S1128	"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ËÁÀá1
+N
+java:S1128",Remove this unused import 'java.util.Deque'.(³Ã¯¥şÿÿÿÿ8ËÁÀá1
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8ËÁÀá1

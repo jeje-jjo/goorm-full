@@ -24,10 +24,6 @@ p	java:S100Ü"NRename this method name to match the regular expression '^[a-z]
 M	java:S106€"+Replace this use of System.out by a logger.(´‹¹öşÿÿÿÿ8üöºá1
 u
 java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(§ö„øùÿÿÿÿ8üöºá1
-U
-java:S1854‰"7Remove this useless assignment to local variable "arr".(Ÿæ©×8Ÿüöºá1
-U
-java:S1854²"7Remove this useless assignment to local variable "lst".(ÏçÒÂ8Ÿüöºá1
 H	java:S106†"+Replace this use of System.out by a logger.(ûÄÏ8 üöºá1
 F
 java:S1481‰"(Remove this unused "arr" local variable.(Ÿæ©×8¡üöºá1
@@ -48,12 +44,6 @@ a
 java:S1155¡">Use isEmpty() to check whether the collection is empty or not.(õßèúùÿÿÿÿ8®üöºá1
 M	java:S106§"+Replace this use of System.out by a logger.(í Âõøÿÿÿÿ8¯üöºá1
 k	java:S100°"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¿úá8¯üöºá1
-S
-java:S1854¸"6Remove this useless assignment to local variable "ck".(áĞ€8¯üöºá1
-^
-java:S1854·";Remove this useless assignment to local variable "parents".(›ìÄ„øÿÿÿÿ8¯üöºá1
-T
-java:S1854´"6Remove this useless assignment to local variable "bw".(ûÄÏ8°üöºá1
 H	java:S106´"+Replace this use of System.out by a logger.(ûÄÏ8°üöºá1
 E
 java:S1481´"'Remove this unused "bw" local variable.(ûÄÏ8°üöºá1
