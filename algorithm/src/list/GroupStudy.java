@@ -367,115 +367,88 @@ public class GroupStudy {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine()) ;
-        //int[][] arr = new int[n][2];
         int[] parents = new int[n+1];
-        int[] arr = new int[(n-1)*2];
         HashMap<Integer, List<Integer>> hm = new HashMap<>();
-        //int[] items = new int[n];
+        int[] r = new int[(n-1)*2];
+        int[] l = new int[(n-1)*2];
 
-
-        for(int i = 0; i < n-1; i++){
+        for(int i = 0; i < n-1 ; i++){
             StringTokenizer st = new StringTokenizer(br.readLine());
-            // int num = Integer.parseInt(st.nextToken());
-            arr[i] = Integer.parseInt(st.nextToken());
-            // 짝수일 경우 이전 값과 함게 연산
-            if(i+1 % 2 == 0){
-                List<Integer> l = new ArrayList<>();
-                l.addAll(hm.get(arr[i]));
-                l.add(arr[i]);
-                hm.put(arr[i-1], l);
-            }
-
-//            int rNum = Integer.parseInt(st.nextToken());
-//            int lNum = Integer.parseInt(st.nextToken());
-//
-//
-//
-//            List<Integer> l = new LinkedList<>();
-//
-//            if(hm.get(rNum) == null){
-//                l.add(lNum);
-//                hm.put(rNum, l);
-//            }else{
-//                l.addAll(hm.get(rNum));
-//                l.add(lNum);
-//                hm.put(rNum, l);
-//            }
-//
-//            List<Integer> r = new LinkedList<>();
-//            if(hm.get(lNum) == null){
-//                r.add(rNum);
-//                hm.put(lNum, r);
-//            }else{
-//                r.addAll(hm.get(lNum));
-//                r.add(rNum);
-//                hm.put(lNum, r);
-//            }
+            r[i] = Integer.parseInt(st.nextToken());
+            l[i+n-1] = r[i];
+            l[i] = Integer.parseInt(st.nextToken());
+            r[i+n-1] = l[i];
         }
 
-        // 맵이 빌 때까지 반복함
+        for(int i = 0; i < r.length; i++){
+            if(hm.get(r[i]) == null){
+                hm.computeIfAbsent(r[i], k -> new ArrayList<>()).add(l[i]);
+            }else{
+                List<Integer> list = hm.getOrDefault(r[i], new ArrayList<>());
+                list.add(l[i]);
+                hm.put(r[i], list);
+            }
+        }
+
+        int list = hm.size();
+        int num = list;
+        int test = 0;
         while(!hm.isEmpty()){
 
-
-            Set<Integer> keySet = hm.keySet();
-            for(int key : keySet){
-                List<Integer> lst = new ArrayList<>();
-
-                // 1이 최상단이기때문에 최상단 내의 value들은 각각의 배열에 삽입
-                if(key == 1){
-                    for(int i = 0; i < hm.get(key).size(); i++){
-                        int num = (hm.get(key)).get(i);
-
-                        parents[num-2] = key;
-
-
-                        // 부모가 정해진 val은 자신이 key인 곳에서 현재 부모 삭제하기
-
-                        hm.get(num).remove(Integer.valueOf(key));
-
+            if(hm.get(num) != null){
+                if(num == 1){
+                    for(int i : hm.get(num)){
+                        parents[i] = num;
+                        hm.get(i).remove(Integer.valueOf(num));
                     }
+                    hm.remove(num);
+                    continue;
 
-                    // 전부 끝났으면 맵에서 해당 제거
-                    hm.remove(key);
-                    // for문이 새로 돌아야 하니까 break
-                    break;
-
-
-                }else if(hm.get(key).size() == 1){
-                    int num = (hm.get(key)).get(0);
-
-
-                    // 현재 아무 해당하는 키에 아무 값도 들어있지 않을 경우
-                    if(parents[key-2] == 0){
-                        parents[key-2] = num;
-                        hm.get(num).remove(Integer.valueOf(key));
-                    }else if(parents[num-2] == 0){
-                        parents[num-2] = key;
-                        hm.get(num).remove(Integer.valueOf(key));
+                } else if(hm.get(num).size() == 1){
+                    int dumm = hm.get(num).get(0);
+                    if(parents[num] == 0){
+                        parents[num] = dumm;
+                    }else if(parents[dumm] == 0){
+                        parents[dumm] = num;
                     }
-                    hm.remove(key);
-                    break;
-                }else if(hm.get(key).size() == 0){
-                    hm.remove(key);
-                    break;
+                    hm.get(dumm).remove(Integer.valueOf(num));
+                    hm.remove(num);
+                    continue;
+                }else if(hm.get(num).size() == 0){
+                    hm.remove(num);
+                    continue;
                 }
-
             }
+
+            System.out.println(num);
+
         }
-
-        for(int i = 0; i < parents.length; i++){
-
-            if(parents[i] != 0){
-                int num = parents[i];
-                System.out.println(num);
-                //bw.write(i == parents.length-1 ? num+"" : num + "\n" );
-            }
-        }
-
 
         bw.flush();
         bw.close();
         br.close();
     }
+
+    public void q11725_2() throws IOException {
+        Map<Integer, List<Integer>>  map = new HashMap<>();     // 저장할 맵
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int n = Integer.parseInt(br.readLine());        // 노드 갯수 입력받음
+        int[] parents = new int[n+1];                   // 부모 저장
+        boolean[] ck = new boolean[n+1];                // 방문여부 체크용
+
+        for(int i = 1; i <= n; i++){
+            map.put(i, new ArrayList<>());              // 우선 키와 빈 리스트로 초기화
+        }
+
+    }
+
+    static void DFS(int node, int parent){
+
+    }
+
+
 }
 
