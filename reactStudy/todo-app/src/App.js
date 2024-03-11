@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import "./App.css";
+import List from "./components/List";
+import Form from "./components/Form";
 
 export default function App(){
 
@@ -12,37 +14,13 @@ export default function App(){
   const [todoData, setTodoData] = useState([]);
   const [value, setValue] = useState("");
 
-  // btn style 정의
-  const btnStyle = {
-    color : "#fff",
-    border : "none",
-    padding : "5px 9px",
-    borderRadius : "50%",
-    cursor : "pointer",
-    float : "right"
-  }
-
   // 동적 변경 역ㅇ역이기 때문에
-  const getStyle = (completed) => {
-    return {
-      padding : "10px",
-      borderBottom : "1px #ccc dotted",
-      textDecoration : completed ? "line-through" : "none"
-    }
-  }
+
 
   
 
-  const handleClick = (id) => {
-    let newTodoData = todoData.filter((data) => data.id !== id);
-    //this.setState({ todoData : newTodoData });
-    setTodoData(newTodoData);
-  }
 
-  const handleChange = (e) => {
-    //this.setState({ value : e.target.value});
-    setValue(e.target.value);
-  }
+
 
   const handleSubmit = (e) => {
     // 페이지 리로딩 방지
@@ -65,17 +43,7 @@ export default function App(){
     setValue("");
   }
 
-  const handleCompletedChange = (id) => {
-    let newTodoData = todoData.map(data => {//this.state.todoData.map(data => {
-      if(data.id === id){
-        data.completed = !data.completed;
-      }
-      return data;
-    })
 
-   // this.setState({ todoData : newTodoData})
-   setTodoData(newTodoData);
-  }
   
 
 
@@ -84,24 +52,14 @@ export default function App(){
       <div className="container">
         <div className="todoBlock">
           <div className="title">
+              <h1 className="text-3xl font-bold underline"> test </h1>
               <h1>할 일 목록</h1>
           </div>
 
-          {todoData.map((data) => (
-          <div style={getStyle(data.completed)} key={data.id}>
-            <input type="checkbox" 
-                    defaultChecked={false} 
-                    onChange={() => handleCompletedChange(data.id)}/>
-              {data.title}
-            <button style={btnStyle} onClick={() => handleClick(data.id)}>x</button>
-          </div>
-          ))}
+          <List todoData={todoData} setTodoData={setTodoData}/>
 
-          <form style={{display : 'flex'}} onSubmit={handleSubmit}>
-            <input type="text" name="value" style={{flex : '10', padding : '5px'}} placeholder="내용 입력" value={value} onChange={handleChange}/>
-            <input type="submit" value="입력" className="btn" style={{flex : '1'}}/>
-          </form>
-          
+          <Form handleSubmit={handleSubmit} value={value} setValue={setValue} />
+           
         </div>
       </div>
     );
