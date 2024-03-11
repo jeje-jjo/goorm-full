@@ -1,0 +1,50 @@
+이 자료는 계속 업데이트되기 때문에 PDF 보다 이 자료로 보는 것을 추천합니다. 
+
+
+#1 리액트란?
+
+https://drive.google.com/file/d/1idYPxZ-D9fCU0oOUEFOikwzjqOig4r4x/view?usp=sharing
+
+
+#2 간단한 To-Do앱 만들며 리액트 익히기
+https://drive.google.com/file/d/1dqbdxY_1m8cMfg3RYLG4s2FR_BN2OniE/view?usp=sharing
+
+#3 To-Do 앱 최적화하기
+https://drive.google.com/file/d/1aJodW4M3EQVbofD5irYbCSjiHble_YGl/view?usp=sharing
+
+
+#4 Netflix 앱 만들기 시작
+https://drive.google.com/file/d/15Jcv8rVfB4xBdd1qaAVfAcsB3adbpink/view?usp=sharing
+
+#5 넷플릭스 앱 모달 및 이미지 불러오기
+https://drive.google.com/file/d/1VxMacXbzWpewjQRJJapsZB9SQXkhC6ob/view?usp=sharing
+
+#6 React TDD 기본
+https://drive.google.com/file/d/19V8gV1caO-RwOLg-MsXSM8pYaQxXCrT6/view?usp=sharing
+
+#7 React TDD 를 이용한 간단한 앱 생성 및 배포
+https://drive.google.com/file/d/1YIMcpGCAG9wPe3XLZuZ1NUewhgvS-S7p/view?usp=sharing
+
+#8 Nextjs와 Typescript
+
+https://drive.google.com/file/d/1xZbW6LoNmJsXubPyPmYxM4iORnNqaLN5/view?usp=sharing
+
+#9 React Version 18
+
+https://drive.google.com/file/d/11r5WYhsSuzwvPc4XxWmGYALcODVA-CdE/view?usp=sharing
+
+#10 Redux를 이용한 간단한 앱 만들기
+
+https://drive.google.com/file/d/1oV24TadxgZrudQ9IiCCSkKG6xkCPdGRC/view?usp=sharing
+
+#11 도커로 리액트 실행하기
+https://drive.google.com/file/d/1Y0e39Kszklia3SSAvEP3HDoXzJduMQNJ/view?usp=sharing
+
+
+만약 다 보이지 않는다면 
+
+https://drive.google.com/drive/folders/1dQnfCvdREAoaFw85P3QJTfEwfLfJduqh?usp=sharing 
+
+여기에 들어가서 다운로드하여주세요! 
+
+감사합니다.
