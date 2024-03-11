@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "./App.css";
-import List from "./components/List";
+import List from "./components/Lists";
 import Form from "./components/Form";
 
 export default function App(){
@@ -15,12 +15,6 @@ export default function App(){
   const [value, setValue] = useState("");
 
   // 동적 변경 역ㅇ역이기 때문에
-
-
-  
-
-
-
 
   const handleSubmit = (e) => {
     // 페이지 리로딩 방지
@@ -49,10 +43,9 @@ export default function App(){
 
   return (
     // jsx는 class 작성을 할 때 className이라고 작성
-      <div className="container">
-        <div className="todoBlock">
-          <div className="title">
-              <h1 className="text-3xl font-bold underline"> test </h1>
+      <div className="flex items-center justify-center w-screen h-screen bg-blue-100">
+        <div className="w-full p-6 m-4 bg-white rounded shadow lg:w-3/4 lg:max-w-lg">
+          <div className="flex justify-between mb-3">
               <h1>할 일 목록</h1>
           </div>
 
