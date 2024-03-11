@@ -1,9 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useCallback} from "react";
 import "./App.css";
-import List from "./components/Lists";
+import Lists from "./components/Lists";
 import Form from "./components/Form";
 
-export default function App(){
+
+const initialTodoData = localStorage.getItem("todoData") ? JSON.parse(localStorage.getItem("todoData")) : [];
+
+ function App(){
 
   // state = {
   //   todoData : [],
@@ -11,7 +14,7 @@ export default function App(){
   // }
 
   // [state, setState] = useState(initialState)
-  const [todoData, setTodoData] = useState([]);
+  const [todoData, setTodoData] = useState(initialTodoData);
   const [value, setValue] = useState("");
 
   // 동적 변경 역ㅇ역이기 때문에
@@ -34,11 +37,23 @@ export default function App(){
     
     //this.setState({ todoData : [...this.state.todoData, newTodo], value  : ""})
     setTodoData( prev => [...prev, newTodo])
+    localStorage.setItem("todoData", JSON.stringify([...todoData, newTodo]));
     setValue("");
   }
 
+  const handleClick = useCallback((id) => {
+    let newTodoData = todoData.filter((data) => data.id !== id);
+    //this.setState({ todoData : newTodoData });
+    setTodoData(newTodoData);
+    localStorage.setItem("todoData", JSON.stringify(newTodoData));
+}, [todoData]);
 
-  
+
+  const handleRemoveClick = () => {
+    //this.setState({ todoData : [] });
+    setTodoData([]);
+    localStorage.setItem("todoData", JSON.stringify([]));
+  }
 
 
   return (
@@ -47,9 +62,10 @@ export default function App(){
         <div className="w-full p-6 m-4 bg-white rounded shadow lg:w-3/4 lg:max-w-lg">
           <div className="flex justify-between mb-3">
               <h1>할 일 목록</h1>
+              <button onClick={handleRemoveClick}>Delete All</button>
           </div>
 
-          <List todoData={todoData} setTodoData={setTodoData}/>
+          <Lists handleClick={handleClick} todoData={todoData} setTodoData={setTodoData}/>
 
           <Form handleSubmit={handleSubmit} value={value} setValue={setValue} />
            
@@ -57,3 +73,5 @@ export default function App(){
       </div>
     );
 }
+
+export default App;

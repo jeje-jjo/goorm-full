@@ -2,7 +2,7 @@ import React from 'react'
 import { DragDropContext, Draggable, Direction, Droppable } from 'react-beautiful-dnd';
 import List from './List';
 
-const Lists = React.memo(({todoData, setTodoData}) => {
+const Lists = React.memo(({handleClick, todoData, setTodoData}) => {
 
   const handleEnd = (result) => {
     console.log('result' ,result)
@@ -17,6 +17,7 @@ const Lists = React.memo(({todoData, setTodoData}) => {
     // 원하는 자리에 redorderItem을 넣어줌
     newTodoData.splice(result.destination.index, 0, redorderedItem);
     setTodoData(newTodoData);
+    localStorage.setItem("todoData", JSON.stringify(newTodoData));
   }
 
 
@@ -42,6 +43,7 @@ const Lists = React.memo(({todoData, setTodoData}) => {
                             setTodoData = {setTodoData}
                             provided = {provided}
                             snapshot = {snapshot}
+                            handleClick = {handleClick}
                           />
                         )}
                     </Draggable>
