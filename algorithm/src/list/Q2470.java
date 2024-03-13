@@ -4,11 +4,13 @@ import java.io.*;
 import java.util.*;
 
 public class Q2470 {
-
     static  List<Integer> pos;
     static  List<Integer> neg;
 
-    static int fin = 1000000000;
+    static int fin = 0;
+
+    static int p = 0;
+    static int ne = 0;
 
 
     public static void main(String[] args) throws IOException {
@@ -39,11 +41,45 @@ public class Q2470 {
         pos.sort(Comparator.naturalOrder());
         neg.sort((i1, i2) -> i2 - i1);
 
-        rf(0, 0);
 
+        // 양수가 비었다면 음수
+        if(pos.isEmpty()){
+            bw.write(neg.get(1) + " " + neg.get(0));
+        }else if(neg.isEmpty()){
+            bw.write(pos.get(0) + " " + pos.get(1));
+        }else if(!pos.isEmpty() && !neg.isEmpty()){
 
-        bw.write(pos.toString() + "\n");
-        bw.write(neg.toString() + "\n");
+            if(neg.size() > 1 && pos.size() > 1) {
+                // 음수보다 양수가 클 경우
+                if ((neg.get(0) + neg.get(1)) * -1 < pos.get(0) + pos.get(1)) {
+                    ne = neg.get(1);
+                    p = neg.get(0);
+                    fin = neg.get(0) + neg.get(1);
+                } else {
+                    ne = pos.get(0);
+                    p = pos.get(1);
+                    fin = pos.get(0) + pos.get(1);
+                }
+            }
+
+            if(pos.size() < 2){
+                if( (fin < 0 ? fin * -1 : fin) > (neg.get(0) + neg.get(1) < 0 ? neg.get(0) + neg.get(1) * -1 : neg.get(0) + neg.get(1) ) ){
+                    ne = neg.get(1);
+                    p = neg.get(0);
+                    fin = ne + p;
+                }
+            }else if(neg.size() < 2){
+                if( (fin < 0 ? fin * -1 : fin) > (pos.get(0) + pos.get(1) < 0 ? pos.get(0) + pos.get(1) * -1 : pos.get(0) + pos.get(1) ) ){
+                    ne = pos.get(0);
+                    p = pos.get(1);
+                    fin = ne + p;
+                }
+            }
+            rf(0, 0);
+            bw.write(ne + " " + p);
+
+        }
+
 
         bw.flush();
         bw.close();
@@ -55,26 +91,36 @@ public class Q2470 {
         int pnum = pos.get(pidx);
         int nnum = neg.get(nidx);
 
-        System.out.println("현재 pnum : " + pnum + " |    현재 nnum : " + nnum + " |     현재 fin : " + fin + " |      두개 합 : " + (pnum+nnum ));
 
-        // 인덱스 기준으로 두 값이 fin보다 0에 가깝다면 (양수로 변환해서 더 작은 값이라면)
-        if( (pnum + nnum < 0 ? (pnum + nnum) * -1 : pnum+nnum )  < fin){
+
+        int pChange = pnum + nnum < 0 ? (pnum + nnum) * -1 : pnum+nnum;
+
+        if(pnum + nnum == 0){
             fin = pnum + nnum;
+            p = pnum;
+            ne = nnum;
+
+
+        }else {
+
+            // 인덱스 기준으로 두 값이 fin보다 0에 가깝다면 (양수로 변환해서 더 작은 값이라면)
+            if (pChange < (fin < 0 ? fin * -1 : fin)) {
+                fin = pnum + nnum;
+                p = pnum;
+                ne = nnum;
+            }
+
+            // 합계가 0보다 크면 양수이동
+            if (pidx < pos.size() - 1 && pnum + nnum < 0) {
+                rf(pidx+1, nidx);
+            } else if (nidx < neg.size() - 1 && pnum + nnum > 0) {
+                rf(pidx, nidx + 1);
+            } else {
+
+
+            }
 
 
         }
-
-        // nidx의 마지막이 아니라면 nidx+1
-        if(nidx < neg.size()-1){
-            rf(pidx, nidx+1);
-            // pidx의 마지막이 아니면서 nidx의 마지막이라면
-        }else if(pidx < pos.size()-1 && nidx == neg.size()-1){
-            rf(pidx+1 , 0);
-            // 둘 다 아니라면 끝
-        }else{
-            System.out.println("순회끝!!!");
-            System.out.println("fin : " + fin);
-        }
-
     }
 }
