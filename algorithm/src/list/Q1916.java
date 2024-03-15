@@ -12,6 +12,9 @@ public class Q1916 {
     static int sum;
     static int end;
 
+    static TreeMap<Integer, TreeMap<Integer, Integer>> map;
+
+
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -30,7 +33,7 @@ public class Q1916 {
 
         List<int[]> list = new ArrayList<>();
         //Map<Integer, int[]> map = new HashMap<>();
-        TreeMap<Integer, TreeMap<Integer, Integer>> map = new TreeMap<>();
+        map = new TreeMap<>();
 
         for(int i = 0; i <= m ; i ++){
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -75,7 +78,7 @@ public class Q1916 {
         // end 값과 같다면 start의 다음 키로
 
         barr[idx] = true;
-        
+
 
 
     }
